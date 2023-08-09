@@ -1,8 +1,11 @@
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
+import config from "../config.js";
 
 // enabling dotenv config
-dotenv.config();
+const result  = dotenv.config({
+    path: config.dotEnvFilePath
+});
 
 /**
  * creating connection pool
