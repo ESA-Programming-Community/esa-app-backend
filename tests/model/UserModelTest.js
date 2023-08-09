@@ -7,5 +7,5 @@ import {getUser} from "../../model/UserModel.js";
  * objects or an empty list if no user ID matches
  * @type {*}
  */
-const user = await getUser(58);
+const user = await getUser(1);
 console.log(user);
