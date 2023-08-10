@@ -32,6 +32,7 @@ CREATE TABLE `users` (
   `username` varchar(255) NOT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
+  `dob` date NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `profile_picture` varchar(255) NOT NULL,
@@ -42,18 +43,6 @@ CREATE TABLE `users` (
   `following_count` int(11) NOT NULL,
   `joined_on` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`user_id`, `username`, `first_name`, `last_name`, `email`, `password`, `profile_picture`, `location`, `about_me`, `links_count`, `followers_count`, `following_count`, `joined_on`) VALUES
-('1', 'mensah', 'Joe', 'Ben', 'ahsa@ssad.djs', '123456', '', 'accra', 'hello', 56, 12, 89, '2023-08-07 18:33:03'),
-('2', 'asdjkasd', 'Mary', 'Grey', 'gsahjdb@ga.asd', 'shashgvaovsabdl', '', 'Tema', 'Fine', 78, 26, 36, '2023-08-07 18:34:39');
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `users`
